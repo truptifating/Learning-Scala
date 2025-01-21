@@ -5,12 +5,12 @@ object forLoop
   def main(args:Array[String]): Unit =
   {
     //Syntax
-   /* for(var i <- Range)
+    /* for(var i <- Range)
     {
 
     }*/
-//1
-    for(i <- 1 to 5) //it will automatically take var hence no need to declare
+    //1
+      for(i <- 1 to 5) //it will automatically take var hence no need to declare
       {
         println(i)
       }
@@ -20,48 +20,40 @@ object forLoop
       {
         println(i)
       }
-      //3
+    //3
       for (i <- 1 until 5) //it will automatically take var hence no need to declare
       {
         println(i)
       }
-      //4
-      for (i <- 1.until(4)) {
+    //4
+      for (i <- 1.until(4))
+      {
         println(i)
       }
-
-      //5--Nested Loop
+    //5--Nested Loop
       for(i<-1 to 5; j<-1 to 3)
-        {
+      {
           println(i+" " +j)
-
-        }
-
-      //6--Iterating and Printing List
+      }
+    //6--Iterating and Printing List
         var ls= List(1,2,6,78,345)
-        for(i <-ls)
-        {
+      for(i <-ls)
+      {
           println("Printing the list "+i)
-        }
+      }
+    //7
+      for(i <-ls;if i<10)
+      {
+          println("Printing the list after if condition "+i)
 
-      //7
-        for(i <-ls;if i<10)
-          {
-            println("Printing the list after if condition "+i)
+      }
 
-          }
-
-        //8
-          var result1 = for {i <- ls; if i < 10} yield
+    //8
+        var result1 = for {i <- ls; if i < 10} yield
           {
             i*i
           }
          // println("Result is-->>"+result1);
-
-
-
-
-
 
   }
 }

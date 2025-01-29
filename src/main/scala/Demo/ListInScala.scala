@@ -2,7 +2,12 @@ package Demo
 
 object ListInScala
 {
-  val myList: List[Int] = List(1,2,6,4,8);
+  //List declaration
+  //1
+  //val myList: List[Int] = List(1,2,6,4,8);
+  //Or
+  //2
+  val myList = List(1,2,6,4,8);
   val nameList: List[String] = List("Max","Carl","Roy");
   def main(args:Array[String]): Unit =
   {
